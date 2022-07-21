@@ -15,7 +15,7 @@ public class WordForNumber {
                 return units[n]; //return value between 0 and 20
             }
             if(n<100){
-                return tens[n/10] + ((n%10 != 0) ? " " : "") + units[n%10];  //return value between 20 and 100
+                return tens[n/10] + ((n%10 != 0) ? units[n%10] : "");  //return value between 20 and 100
             }
         }
         return null;
